@@ -7,7 +7,7 @@
 body {
   font-family: sans-serif;
   background-color: black;
-  background-image: url(../assets/images/CW\ Leo\ From\ GALEX_desktop.png);
+  background-image: url(../assets/images/BG/cd0d2aa8-70ab-4130-85d1-e07935e7b246.png);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -146,15 +146,21 @@ div.banner p{
   display: flex;
   padding: 30px;
   overflow-x: auto;
-  gap: 20px;
+  gap: 35px;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
   scrollbar-width: none;
+  margin-top: 35px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 18px;
+  backdrop-filter: blur(8px);
 }
 
 .featured-creators:hover{
-  scrollbar-width: thin;
+  scrollbar-width:thin;
+  scrollbar-base-color: #b672f5;
 }
 
 .featured-creators:hover::-webkit-scrollbar {
@@ -164,24 +170,30 @@ div.banner p{
 .creator-card{
   width : 300px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(8px);
   height: 120px;
   flex-shrink: 0;
   display: flex;
   gap: 12px;
-  padding: 10px;
 }
 
 .creator-image{
-  width: 100px;
-  height: 100px;
+  width: 95px;
+  height: 95px;
+  border: 2px solid white;
   border-radius: 60px;
   overflow: hidden;
+  margin-top: 8px;
+  margin-left: 10px;
 }
 
 .creator-image img{
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit:cover;
   display: block;
 }
 
@@ -201,4 +213,46 @@ div.banner p{
 
 .follow{
   width: fit-content;
+}
+
+.trending-section{
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.trending-section-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.trending-videos-scroll{
+  display: flex;
+  overflow-x: auto;
+  height:auto;
+  gap: 35px;
+  margin: 5px;
+  scrollbar-width: none;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 18px;
+  backdrop-filter: blur(8px);
+}
+
+.trending-video-card{
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.trending-video-card img{
+  width: 100%;
+}
+
+.trending-video-card a{
+  object-fit: cover;
 }
